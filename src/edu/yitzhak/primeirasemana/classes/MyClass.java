@@ -1,4 +1,4 @@
-package edu.yitzhak.primeirasemana; // Convensão de pacotes Java
+package edu.yitzhak.primeirasemana.classes; // Convensão de pacotes Java
 
 import static java.lang.StringTemplate.STR; // Template string
 
