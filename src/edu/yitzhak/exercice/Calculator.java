@@ -15,6 +15,7 @@ package edu.yitzhak.exercice;
 public class Calculator {
   /**
    * This method adds two numbers.
+   * 
    * @param firstNumber
    * @param secondNumber
    * @return int This returns the sum of two numbers.
@@ -22,5 +23,17 @@ public class Calculator {
 
   public int add(int firstNumber, int secondNumber) {
     return firstNumber + secondNumber;
+  }
+
+  public int multiply(int firstNumber, int secondNumber) {
+    return firstNumber * secondNumber;
+  }
+
+  public int subtract(int firstNumber, int secondNumber) {
+    return firstNumber - secondNumber;
+  }
+
+  public int divide(int firstNumber, int secondNumber) {
+    return firstNumber / secondNumber;
   }
 }
