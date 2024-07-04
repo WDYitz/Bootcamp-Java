@@ -1,6 +1,6 @@
-package edu.yitzhak.primeirasemana.classes; // Convensão de pacotes Java
+package edu.yitzhak.firstweek.classes; // Convensão de pacotes Java
 
-import static java.lang.StringTemplate.STR; // Template string
+import static java.lang.StringTemplate.STR; // Template string method
 
 public class MyClass {
   public static void main(String[] args) {

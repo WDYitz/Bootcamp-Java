@@ -1,4 +1,4 @@
-package edu.yitzhak.primeirasemana.variables;
+package edu.yitzhak.firstweek.variables;
 
 public class Variables {
   public static void main(String[] args) {
