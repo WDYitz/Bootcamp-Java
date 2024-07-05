@@ -1,5 +1,7 @@
 package com.yitzhak.exercice;
 
+import static java.lang.StringTemplate.STR;
+
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -19,7 +21,7 @@ public class InputScanner {
       Double height = scanner.nextDouble();
 
       System.out.println(
-          "Hi, My Name is " + name + " " + lastName + " and I am " + age + " years old and " + height + " meters tall.");
+          STR."Hi, My Name is \{name} \{lastName} and I am \{age} years old and \{height} meters tall.");
     }
   }
 }
