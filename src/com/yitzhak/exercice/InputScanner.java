@@ -5,6 +5,7 @@ import static java.lang.StringTemplate.STR;
 import java.util.Locale;
 import java.util.Scanner;
 
+@SuppressWarnings("unused")
 public class InputScanner {
   public static void main(String[] args) {
     try (Scanner scanner = new Scanner(System.in).useLocale(Locale.US)) {
