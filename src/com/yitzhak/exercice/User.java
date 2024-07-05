@@ -1,7 +1,8 @@
-package edu.yitzhak.exercice;
+package com.yitzhak.exercice;
 
 import static java.lang.StringTemplate.STR;
 
+@SuppressWarnings("unused")
 public class User {
   public static void main(String[] args) {
     SmartTV smartTV = new SmartTV();

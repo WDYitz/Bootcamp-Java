@@ -1,7 +1,8 @@
-package edu.yitzhak.firstweek.classes; // Convensão de pacotes Java
+package com.yitzhak.firstweek.classes; // Convensão de pacotes Java
 
 import static java.lang.StringTemplate.STR; // Template string method
 
+@SuppressWarnings("unused")
 public class MyClass {
   public static void main(String[] args) {
     String firstName = "Yitzhak";

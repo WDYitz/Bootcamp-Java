@@ -1,5 +1,6 @@
-package edu.yitzhak.firstweek.variables;
+package com.yitzhak.firstweek.variables;
 
+@SuppressWarnings("unused")
 public class Variables {
   public static void main(String[] args) {
     // Declaração de variáveis

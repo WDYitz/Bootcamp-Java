@@ -1,4 +1,4 @@
-package edu.yitzhak.firstweek.operators;
+package com.yitzhak.firstweek.operators;
 
 public class Operators {
   public static void main(String[] arg) {

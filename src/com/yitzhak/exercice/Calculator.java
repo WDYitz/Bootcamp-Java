@@ -1,4 +1,4 @@
-package edu.yitzhak.exercice;
+package com.yitzhak.exercice;
 
 /**
  * <h3>Calculator</h3>

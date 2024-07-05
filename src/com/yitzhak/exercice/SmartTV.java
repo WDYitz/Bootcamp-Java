@@ -1,4 +1,4 @@
-package edu.yitzhak.exercice;
+package com.yitzhak.exercice;
 
 public class SmartTV {
   boolean isOn = false;
