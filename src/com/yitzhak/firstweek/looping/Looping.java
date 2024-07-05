@@ -45,7 +45,7 @@ public class Looping {
     // DO WHILE
     do {
       System.out.println("Telefone Tocandoo...");
-    } while (false);
+    } while (tocando());
   }
 
   private static boolean tocando() {
