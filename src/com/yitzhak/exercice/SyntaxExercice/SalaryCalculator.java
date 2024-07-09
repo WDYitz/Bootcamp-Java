@@ -5,6 +5,7 @@ import static java.lang.StringTemplate.STR;
 import java.util.Scanner;
 
 public class SalaryCalculator {
+  @SuppressWarnings("resource")
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
     System.out.println("Calculo de salario");
