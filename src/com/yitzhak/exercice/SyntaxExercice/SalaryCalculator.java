@@ -4,6 +4,7 @@ import static java.lang.StringTemplate.STR;
 
 import java.util.Scanner;
 
+@SuppressWarnings("unused")
 public class SalaryCalculator {
   @SuppressWarnings("resource")
   public static void main(String[] args) {
