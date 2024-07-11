@@ -73,39 +73,4 @@ public class Atm {
       System.out.println("Erro: " + e.getMessage());
     }
   }
-
-  /*
-   * public static class AtmMachine {
-   * private String name;
-   * private Object accountNumber;
-   * private double balance;
-   * public double withdrawValue;
-   * 
-   * public AtmMachine(int accountNumber, String name) {
-   * this.accountNumber = accountNumber;
-   * this.name = name;
-   * }
-   * 
-   * public String deposit(double depositValue) {
-   * this.balance += depositValue;
-   * return STR."Você depositou \{depositValue}";
-   * }
-   * 
-   * public String withdraw(double withdrawValue) {
-   * if (this.balance < withdrawValue) {
-   * return STR."Saldo insuficiente! Saldo atual: \{this.balance}";
-   * }
-   * this.balance -= withdrawValue;
-   * return STR."Saque realizado com sucesso! Saldo atual: \{this.balance}";
-   * }
-   * 
-   * public String getBalance() {
-   * return STR."Saldo atual: \{this.balance}";
-   * }
-   * 
-   * public String getName() {
-   * return this.name;
-   * }
-   * }
-   */
 }
