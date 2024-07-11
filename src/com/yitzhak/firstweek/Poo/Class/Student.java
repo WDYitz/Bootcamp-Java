@@ -1,8 +1,8 @@
 package com.yitzhak.firstweek.Poo.Class;
 
-import com.yitzhak.firstweek.Poo.PDO.StudentPDO;
+import com.yitzhak.firstweek.Poo.DTO.StudentDTO;
 
-public class Student implements StudentPDO {
+public class Student implements StudentDTO {
   private String name;
   private int age;
   private String sex;

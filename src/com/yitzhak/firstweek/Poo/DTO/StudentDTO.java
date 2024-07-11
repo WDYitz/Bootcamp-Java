@@ -1,6 +1,6 @@
-package com.yitzhak.firstweek.Poo.PDO;
+package com.yitzhak.firstweek.Poo.DTO;
 
-public interface StudentPDO {
+public interface StudentDTO {
   String name = "";
   int age = 0;
   String sex = "";
