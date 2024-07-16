@@ -1,4 +1,4 @@
-package com.yitzhak.secondweek.CollectionsAPI.List;
+package com.yitzhak.secondweek.CollectionsAPI.List.Pesquisa;
 
 import java.util.ArrayList;
 import java.util.List;

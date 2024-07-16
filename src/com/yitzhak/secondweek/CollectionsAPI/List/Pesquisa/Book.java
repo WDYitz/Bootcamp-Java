@@ -1,4 +1,4 @@
-package com.yitzhak.secondweek.CollectionsAPI.List;
+package com.yitzhak.secondweek.CollectionsAPI.List.Pesquisa;
 
 public class Book {
   private String titulo;

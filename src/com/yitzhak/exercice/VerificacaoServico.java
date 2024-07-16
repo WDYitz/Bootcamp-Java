@@ -3,7 +3,7 @@ package com.yitzhak.exercice;
 import java.util.Scanner;
 
 public class VerificacaoServico {
-  @SuppressWarnings({ "unlikely-arg-type", "unused" })
+  @SuppressWarnings({ "unused" })
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
 

@@ -1,4 +1,4 @@
-package com.yitzhak.secondweek.CollectionsAPI.List;
+package com.yitzhak.secondweek.CollectionsAPI.List.Ordenacao;
 
 import java.util.ArrayList;
 import java.util.List;
