@@ -1,5 +1,9 @@
 package com.yitzhak.secondweek.FunctionaInterfaces.Supplier;
 
+/*
+ * Supplier é uma interface funcional que representa uma função que não recebe argumentos e retorna um valor.
+ */
+
 import java.util.List;
 import java.util.function.Supplier;
 import java.util.stream.Stream;

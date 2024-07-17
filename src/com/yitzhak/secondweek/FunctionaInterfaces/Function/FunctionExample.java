@@ -1,5 +1,9 @@
 package com.yitzhak.secondweek.FunctionaInterfaces.Function;
 
+/*
+ * Function é uma interface funcional que representa uma função que recebe um argumento e retorna um valor.
+ */
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Function;
