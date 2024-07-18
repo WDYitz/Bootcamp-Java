@@ -5,9 +5,9 @@ import static java.lang.StringTemplate.STR;
 import java.util.Scanner;
 
 @SuppressWarnings("unused")
-public class Atm {
+public class Atm implements AtmInterface {
   private String name;
-  private Object accountNumber;
+  private int accountNumber;
   private double balance;
   public double withdrawValue;
 
@@ -29,6 +29,15 @@ public class Atm {
     return STR."Saque realizado com sucesso! Saldo atual: \{this.balance}";
   }
 
+  public String transfer(double transferValue, AtmInterface account) {
+    if (this.balance < transferValue) {
+      return STR."Saldo insuficiente! Saldo atual: \{this.balance}";
+    }
+    this.balance -= transferValue;
+    account.deposit(transferValue);
+    return STR."Transferência realizada com sucesso! Saldo atual: \{this.balance}";
+  }
+
   public String getBalance() {
     return STR."Saldo atual: \{this.balance}";
   }
@@ -37,9 +46,15 @@ public class Atm {
     return this.name;
   }
 
+  public int getAccountNumber() {
+    return this.accountNumber;
+  }
+
   public static void main(String[] args) {
     Atm atm = new Atm(5362, "Yitzhak");
-    System.out.println(STR."Olá, \{atm.getName()} \n1 - Depositar \n2 - Sacar \n3 - Ver Saldo \n4 - Sair");
+    Atm atmLucas = new Atm(5355, "Lucas");
+
+    System.out.println(STR."Olá, \{atm.getName()} \n1 - Depositar \n2 - Sacar \n3 - Ver Saldo \n4 - Transferir \n5 - Sair");
 
     try (Scanner scanner = new Scanner(System.in)) {
       int option = scanner.nextInt();
@@ -60,17 +75,29 @@ public class Atm {
             System.out.println(atm.getBalance());
             break;
           case 4:
+            System.out.println("Digite o valor da transferencia: ");
+            double transferValue = scanner.nextDouble();
+            System.out.println("Digite o numero da conta: ");
+            int accountNumber = scanner.nextInt();
+            if (accountNumber != atmLucas.getAccountNumber()) {
+              System.out.println("Conta não encontrada!");
+              break;
+            }
+            System.out.println(atm.transfer(transferValue, atmLucas));
+            break;
+          case 5:
             System.out.println("Obrigado por utilizar nossos serviços!");
             return;
           default:
             System.out.println("Opção inválida!");
         }
-        System.out.println("Deseja realizar mais alguma açao? \n1 - Depositar \n2 - Sacar \n3 - Ver Saldo \n4 - Sair");
+        System.out.println(STR."Olá, \{atm.getName()} \n1 - Depositar \n2 - Sacar \n3 - Ver Saldo \n4 - Transferir \n5 - Sair");
         option = scanner.nextInt();
-      } while (option != 4);
+      } while (option != 5);
 
     } catch (Exception e) {
       System.out.println("Erro: " + e.getMessage());
     }
   }
+
 }
