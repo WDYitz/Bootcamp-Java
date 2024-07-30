@@ -1,4 +1,4 @@
-package com.yitzhak.exercice;
+package com.yitzhak.exercice.DesafioBancario;
 
 import java.util.ArrayList;
 import java.util.List;
